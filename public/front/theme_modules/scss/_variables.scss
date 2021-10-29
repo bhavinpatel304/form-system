@@ -1,0 +1,65 @@
+///// None color /////
+$none:0px;
+$colornone:transparent;
+///// color /////
+$colorTheme: #25aae1;
+$success: #78b74d;
+// $lightcolorTheme: #8383ea;
+// $colorThemeTable: #a27ce6;
+
+// $colorTheme: #ff4637;
+
+$darkTheme: #000;
+$cardcolor:#0e0e0e;
+$light-font:#e9e9e9;
+
+$dark: #333335;
+
+$darklight: #757575;
+$grey: #f3f4f5;
+$white: #fff;
+$black:#000;
+$danger:#f73131;  
+$border-theme: $colorTheme;
+///// Font Size ///// 
+$fontBaseline:1rem;
+///// margin & padding  Size ///// 
+$baseline:1rem;
+///// margin & padding  Size /////
+$percentage:10%;
+
+
+///// SideBar & Navigation color/////
+$header:$darkTheme;
+$sidebar:$darkTheme;
+$sidebaractive:$colorTheme;
+$sideSimple:#e9e9e9;
+
+$sidebarHover:$cardcolor;
+$sidebarHoverActive:$cardcolor;
+$darkhover:$cardcolor;
+
+$tableHover:rgba($colorTheme,.02);
+///// SideBar & Navigation color /////
+
+///// Login color /////
+$imageffect:rgba($darkTheme,.6);
+///// Login color /////
+
+$theme-colors: (
+    "primary": $colorTheme,
+    "success": $success,
+    "danger": $danger,
+  );
+ 
+
+ 
+
+ 
+ 
+$light-gray: #ebe9fb;
+ 
+
+$inputline: #bdc4d2;
+
+ 

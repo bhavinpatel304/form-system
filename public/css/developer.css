@@ -1,0 +1,145 @@
+.form-error {
+    color: red;
+}
+.has-error .form-error {
+    color: red;
+    position: absolute
+}
+.ajs-message.ajs-customSuccess {
+    color: #fff;
+    background: rgba(91, 189, 114, .95);
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, .5);
+    bottom: 750px;
+    right: 20px;
+}
+.form-group.required label:after {
+    content: "*";
+    color: red;
+}
+.card {
+    /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);*/
+}
+.card:hover {
+    /*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+}
+.select-client {
+    display: none;
+}
+.alertify .ajs-footer .ajs-buttons.ajs-primary .btn-primary {
+    color: #fff;
+    background-color: #26418f;
+    border-color: #26418f;
+}
+#status_drop {
+    width: 100px;
+    height: 36px;
+    display: inline-block;
+    float: inherit !important;
+}
+.create-theme .create-survey .custom_form .color-picker #sub-picker-color {
+    border-right: 40px solid #000;
+}
+.create-theme .create-survey .custom_form .color-picker #heading-picker-color {
+    border-right: 40px solid #000;
+}
+.create-theme .create-survey .custom_form .color-picker #heading-picker-bckgrd {
+    /* border-right:40px solid #000; */
+    border-right: 40px solid #fff;
+}
+.create-theme .create-survey .custom_form .color-picker #sub-picker-bckgrd {
+    /* border-right:40px solid #000; */
+    border-right: 40px solid #fff;
+}
+.alertify .ajs-footer .ajs-buttons.ajs-primary .btn-primary-success {
+    background-color: #63a536;
+    border-color: #63a536;
+    color: #fff !important;
+}
+.alertify .ajs-footer .ajs-buttons.ajs-primary .btn-secondary {
+    background-color: #5a6268;
+    border-color: #545b62;
+    color: #fff !important;
+}
+.header-dropdown .theme-search input:focus {
+    box-shadow: inherit;
+    border-color: #26418f;
+    outline: none;
+}
+.select2-container-multi .select2-search-choice-close, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    padding-left: 5px !important;
+    float: right;
+}
+.surveyLink {
+    position: absolute;
+    right: 35px;
+    top: 10px;
+}
+.csvLink {
+    position: absolute;
+    right: 65px;
+    top: 10px;
+}
+.showLink {
+    color: #7e7e7e;
+}
+.survey_form fieldset .card-heading {
+    border: 1px solid #ddd;
+}
+.modal-ku {
+    max-width: 1300px !important;
+    width: 1300px !important;
+    margin: auto;
+}
+.bold {
+    font-weight: bold !important;
+}
+.italic {
+    font-style: italic !important;
+}
+.underline {
+    text-decoration: underline !important;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.copySurveyLink {
+    position: absolute;
+    right: 95px;
+    top: 10px;
+}
+.dashboard-theme .survey-card .copySurveyLink a {
+    color: #7e7e7e;
+}
+.dashboard-theme .survey-card .copySurveyLink a:hover, .dashboard-theme .survey-card .copySurveyLink a:focus {
+    color: #26418f;
+}
+
+#backend-pill{
+    cursor: pointer;
+}
+.inactiveActiveLinkDiv {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.text-wrap-datatable{
+    white-space:normal !important;
+    line-height: unset;
+}
+ 
+.cursor-auto{
+    cursor: auto;
+}
+.survey_form .table-wrap .table th{
+    text-transform:inherit;
+}
+
+.deleteQuestion svg:hover , .deleteQuestionFromLibrary svg:hover{
+  fill:red !important;
+}
+.appendRadio{
+    max-height:400px !important;
+    overflow-y:auto !important;
+}

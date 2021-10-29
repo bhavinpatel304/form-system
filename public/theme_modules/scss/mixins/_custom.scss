@@ -1,0 +1,17 @@
+// transition START//
+@mixin transition ($second, $effect) {
+  transition: all $second $effect;
+  -webkit-transition: all $second $effect;
+  -moz-transition: all $second $effect;
+  -o-transition: all $second $effect;
+}
+@mixin boxShadow ($shadow:0 14px 26px -12px rgba(0,0,0, 0.2), $z-shadow:0 4px 23px 0 rgba(0,0,0, 0.2), $dz-shadow:0 8px 10px -5px rgba(0,0,0, 0.2)) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+@mixin boxShadowHover ($shadow:0 14px 26px -12px rgba(0,0,0, 0.60)!important, $z-shadow:0 4px 23px 0 rgba(0,0,0, 0.12), $dz-shadow:0 8px 10px -5px rgba(0,0,0, 0.2)!important) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}

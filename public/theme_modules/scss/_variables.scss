@@ -1,0 +1,61 @@
+  
+///// None color /////
+$none:0px;
+$colornone:transparent;
+///// color /////
+$colorTheme: #26418f;
+$colorThemeDark: #19337e;
+$colorTabDark: #17317c;
+$colorThemeSecond: #6e8cda;
+$success: #69aa3d;
+$successdark: #63a536;
+
+$dark: #333;
+$darkTheme: #191f28;
+$darklight: #757575;
+$grey: #f3f4f5;
+$white: #fff;
+$black:#000;
+$danger:#f73131;  
+$border-theme: $colorTheme;
+///// Font Size ///// 
+$fontBaseline:1rem;
+///// margin & padding  Size ///// 
+$baseline:1rem;
+///// margin & padding  Size /////
+$percentage:10%;
+
+
+///// SideBar & Navigation color/////
+$header:$darkTheme;
+$sidebar:$white;
+$sidebaractive:$white;
+$sideSimple:rgba($dark, 1);
+
+$sidebarHover:rgba($colorTheme,1);
+$sidebarHoverActive:rgba($colorTheme,1);
+$darkhover:rgba($white, .1);
+
+$tableHover:rgba($colorTheme,.02);
+///// SideBar & Navigation color /////
+
+///// Login color /////
+$imageffect:rgba($colorTheme,.6);
+///// Login color /////
+
+$theme-colors: (
+    "primary": $colorTheme,
+    "danger": $danger,
+  );
+ 
+
+ 
+
+ 
+ 
+$light-gray: #ebe9fb;
+ 
+
+$inputline: #bdc4d2;
+
+ 

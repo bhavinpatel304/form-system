@@ -1,0 +1,516 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+//Theme Modules
+@import "../../theme_modules/scss/variables";
+@import "../../theme_modules/scss/mixins";
+
+/*!
+ * Navigation Bar Css  START
+ * Modify By Designer
+ */
+
+.site-navbar {
+    padding: 0px !important;
+    box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+    background-color: $white;
+    overflow: initial;
+    min-height: 58px;
+    position: inherit;
+    transform: inherit;
+    border: 0px;
+
+    .navbar-header {
+        @media (min-width: 1025px) {
+            width: 250px;
+        }
+
+        .navbar-brand {
+            height: 60px;
+            padding: .66rem 0;
+            margin-right: $none;
+            color: white;
+            text-decoration: inherit;
+            display: flex;
+            align-items: center;
+
+            a {
+
+                &:hover,
+                &:focus {
+                    text-decoration: inherit;
+                }
+            }
+
+            .navbar-brand-logo {
+                display: inline-block;
+                height: 28px;
+                width: 28px;
+                vertical-align: middle;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                    fill: $colorTheme;
+                }
+            }
+
+            .navbar-brand-text {
+                font-family: 'Quicksand', sans-serif;
+                margin-left: .429rem;
+                color: $white;
+                font-size: 14px;
+                font-weight: 200;
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+
+                span {
+                    font-weight: 400;
+                    background: $colorTheme;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+            }
+        }
+
+    }
+
+    .navbar-toggler {
+        height: 4.2rem;
+
+        .wrapper-menu {
+            position: relative;
+            z-index: 11;
+            width: 20px;
+            height: 17px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: transform 330ms ease-out;
+
+
+            .line-menu {
+                background-color: $dark;
+                border-radius: 2px;
+                width: 100%;
+                height: 2px;
+
+                &.half {
+                    width: 50%;
+                }
+
+                &.start {
+                    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+                    transform-origin: right;
+                }
+
+                &.end {
+                    align-self: flex-end;
+                    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+                    transform-origin: left;
+                }
+
+            }
+        }
+
+
+
+    }
+
+    .avatar {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        white-space: nowrap;
+        border-radius: 100%;
+        overflow: hidden;
+
+        @include media-breakpoint-up(md) {
+            margin-right: 1rem;
+        }
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+
+    .profile {
+        .nav-link {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-in {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 550;
+        }
+
+        .navbar-avatar {
+            padding: .8rem;
+            font-weight: 600;
+        }
+
+        .dropdown-menu {
+            width: 200px;
+            right: 0;
+            left: auto;
+            position: absolute;
+            border: 0;
+            padding: 0;
+            z-index: 555;
+            li {
+                border-bottom: solid 1px rgba($dark, .07);
+
+                &:last-child {
+                    border-bottom: 0px;
+                }
+            }
+
+            .dropdown-item {
+                margin: $none;
+                font-size: 15px;
+                color: $dark;
+                font-weight: 550;
+                i {
+                    font-size: 14px;
+                }
+
+                &:hover {
+                    background: -moz-linear-gradient(left, #838efe 0%, #61bafb 100%);
+                    background: -webkit-linear-gradient(left, #838efe 0%, #61bafb 100%);
+                    background: linear-gradient(to right, #838efe 0%, #61bafb 100%);
+                    color: $white;
+
+                }
+
+            }
+
+            .user-info {
+                padding: 15px 16px 0;
+
+                .user-name {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+
+                .user-position {
+                    margin-bottom: .5rem;
+                }
+            }
+        }
+
+    }
+
+    .navbar-toolbar {
+        .nav-link {
+            color: $dark;
+
+            &:focus,
+            &:hover {
+                background: $darkhover;
+            }
+        }
+
+    }
+
+    @media (max-width:1024px) {
+        .navbar-brand-center {
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
+            -o-transform: translate(-50%, 0);
+            transform: translate(-50%, 0)
+        }
+    }
+}
+
+.site-navbar {
+    &.h_header {
+        padding: 0 4.5rem !important;
+    }
+
+    @media (max-width:1400px) {
+        &.h_header {
+            padding: 0 1.5rem !important;
+        }
+    }
+
+}
+
+/*!
+ * Navigation Bar Css  END
+ * Modify By Designer
+ */
+
+/*!
+ * Side Bar Css  START
+ * Modify By Designer
+ */
+@media (max-width:1024px) {
+    .site-menubar-unfold {
+        .site-menubar {
+            -webkit-transform: translate3d(-100%, 0, 0);
+            -ms-transform: translate(-100%, 0);
+            transform: translate3d(-100%, 0, 0);
+        }
+    }
+
+    .site-menubar-hide {
+        .site-menubar {
+            -webkit-transform: translate3d(0, 0, 0);
+            -ms-transform: translate(0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+        .wrapper-menu {
+            transform: rotate(-45deg);
+
+            .line-menu {
+                &.start {
+                    transform: rotate(-90deg) translateX(3px);
+                }
+
+                &.end {
+                    transform: rotate(-90deg) translateX(-3px);
+                }
+            }
+        }
+
+    }
+
+    .site-menubar-hide,
+    .site-menubar-unfold {
+        .site-menubar {
+            left: 0;
+            -webkit-transition: -webkit-transform .25s, top .35s, height .35s;
+            -o-transition: -o-transform .25s, top .35s, height .35s;
+            transition: transform .25s, top .35s, height .35s;
+        }
+    }
+}
+
+.site-menubar {
+    position: fixed;
+    top: 62px;
+    z-index: 1400;
+    width: 250px;
+    height: 100%;
+    height: -webkit-calc(100% - 60px);
+    height: calc(100% - 60px);
+    background: $sidebar;
+    box-shadow: 1px 0 20px rgba(60, 54, 57, 0.02);
+
+
+
+    .site-menu {
+        padding: $none;
+        margin: $none;
+        list-style: none;
+
+        .site-menu-item {
+            padding: 0;
+            font-size: 16.5px;
+            position: relative;
+            white-space: nowrap;
+            border-bottom: solid 1px rgba($sideSimple, .09);
+            a {
+
+                display: block;
+                padding: 15px 12px;
+                margin: 0;
+                text-align: center;
+                text-decoration: none !important;
+                white-space: nowrap;
+            
+                transition: all 0.5s ease;
+                cursor: pointer;
+                color: $sideSimple;
+
+
+                .site-menu-icon {
+                    display: block !important;
+                    width: 1em;
+                    margin: .6rem auto;
+                    // font-size: 24px;
+                    text-align: center;
+                    width: 22px;
+                    height: 22px;
+
+                    svg {
+                        width: 100%;
+                        height: 100%;
+                        fill: $sideSimple;
+                    }
+                }
+
+                .site-menu-item {
+                    font-size: 14px;
+                }
+            }
+
+            &:hover,
+            &:focus {
+              
+
+                a {
+                    color: $sidebaractive !important;
+                    background-color: $sidebarHover;
+                    svg {
+                        fill: $colorTheme;
+                    }
+                }
+            }
+
+            &.active {
+              
+
+                a {
+                    background: $sidebarHoverActive;
+                  
+                    color: $sidebaractive !important;
+
+                    svg {
+                        fill: $sidebaractive;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*! * HSide Bar Css  Start */
+
+
+.site-menubar {
+    @media (min-width: 1025px) {
+        &.h_menu {
+            background: $colornone;
+            box-shadow: inherit;
+            width: inherit;
+            height: inherit;
+            position: inherit;
+            display: inline-block;
+
+            .h-p100 {
+                width: 100%;
+                overflow: inherit;
+                height: inherit !important;
+
+                padding: 0 5rem;
+
+                @media (min-width: 992px) and (max-width: 1700px) {
+                    padding: 0 2rem;
+                }
+
+                @include media-breakpoint-down(md) {
+                    padding: 0 1.5rem;
+                }
+
+            }
+
+            .site-menu {
+                display: flex;
+
+                .site-menu-item {
+                    display: inline-flex;
+                    height: 100%;
+                    margin-right: 45px;
+                    line-height: 25px;
+
+                    a {
+                        border-bottom: 0;
+                        padding: 18.5px 8px;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        font-weight: 550;
+                        letter-spacing: 1px;
+                        color: #4e4e4e;
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            background: $colorTheme;
+                            width: 0%;
+                            height: 3px;
+                            left: 0;
+                            right: 0;
+                            margin: 0 auto;
+                            position: absolute;
+                            bottom: 0;
+                            -webkit-transition: .6s;
+                            -o-transition: .6s;
+                            transition: .6s;
+                            border-top-left-radius: 5px;
+                            border-top-right-radius: 5px;
+
+                        }
+
+                        .site-menu-icon {
+                            display: inline-block !important;
+                            vertical-align: middle;
+                            width: 15px;
+                            height: 15px;
+                            margin: 0;
+                            margin-right: 10px;
+
+                        }
+
+                    }
+
+                    &:hover,
+                    &:focus {
+                     
+
+                        a {
+                            background-color: $white;
+                            color: $colorTheme !important;
+                            color: $colorTheme;
+
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    &.active {
+                        a {
+                            background-color: $white;
+                            color: $colorTheme !important;
+
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    // @media (max-width: 1300px) {
+    //   &.h_menu .site-menu .site-menu-item{
+    //     margin-right: 0px;
+    //   }
+    // }
+}
+
+/*!
+ * Side Bar Css  END
+ * Modify By Designer
+ */

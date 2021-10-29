@@ -1,0 +1,55 @@
+
+
+
+@mixin inputwithlabel() {
+    .effect-16 {
+        border: 0;
+        padding: 7px 0;
+        border-bottom: 1px solid rgba($black, 0.15);
+    }
+    .effect-16~.focus-border {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $colorTheme;
+        transition: 0.4s;
+    }
+    .effect-16:focus~.focus-border,
+    .has-content.effect-16~.focus-border {
+        width: 100%;
+        transition: 0.4s;
+    }
+    .effect-16~label {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: -16px;
+        font-size: 14px;
+       color: $colorTheme;
+        transition: 0.3s;
+        z-index: -1;
+        letter-spacing: 0.5px; 
+        font-weight: 600;
+    }
+    // .effect-16:focus~label,
+    // .has-content.effect-16~label {
+    //     top: -16px;
+    //     font-size: 14px;
+    //     color: $colorTheme;
+    //     transition: 0.3s;
+    // }
+    .has-content.effect-16~.focus-border {
+        background-color: $colorTheme;
+    }
+    img {
+        height: 40px;
+        padding: 10px;
+        pointer-events: none;
+        position: absolute;
+        top: -2px;
+        right: 0px;
+        background-color: $white;
+    }
+}
